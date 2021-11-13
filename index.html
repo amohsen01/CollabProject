@@ -98,6 +98,47 @@ family=Fira+Mono&display=swap" rel="stylesheet">
   <br><br><br><br><br><br><br><br><br><br>
 </div>
 
+<?php include 'login.php';?>
+<div class="jumbotron2 jumbotron-fluid" >
+    <div class="container" style="height: 650px;">
+  
+        <div  style="margin-top: 70px; margin: 0; position:relative; right:300px; padding: 0;">
+            <span> 
+                <img src="img2.jpg" style="margin-left:100px; margin-top: 100px;  float: left;"> <br><br>
+            </span>
+            <br>
+          
+            <br>     
+            <div class="card" style="width: 25rem; height: 640px; margin-top: -100px; left: 400px;  text-align: center; background-color: #f5f5f5;">
+       
+                <div class="card-body">
+                  <u><h5 class="card-title" style="font-size: xx-large;">CollabLab</h5></u><br><br>
+                  <form action="login.php" method="POST">
+                    <b><label style="font-family: Lucida Console; margin-right: 120px; "> Username* </label></b>
+                    <p><input type="text" name="username" required="required" style="height:45px; border-radius: 8px"> </p> 
+                    <b><label style="font-family: Lucida Console; margin-right: 120px; " > Password* </label></b>
+                    <p><input type="password" name="password" required="required" style="height:45px; border-radius: 8px"> </p>
+                    <br>
+                    <div style="text-align: center;">  <input align="center" class="btn btn-primary" type="submit" name="login_user" value="Login"></div>
+                    
+                    </form> 
+                    <br>
+                    <p style="font-size: 16px;">________________or________________</p> <br>
+                    <div style="text-align: center;">  <button align="center" class="btn btn-light" style="border-color: black; width: 200px; color: gray;"  type="submit" name="googlestuff"><i class="fa fa-google"> Sign in with Google</i> </button></div>
+
+                </div>
+              </div>
+    </div>
+
+
+    
+</div>
+
+
+    
+  
+    </div>
+  
 
 
 </body>
