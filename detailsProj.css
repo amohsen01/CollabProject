@@ -1,0 +1,37 @@
+img{
+    object-fit: cover }
+
+
+.card
+  {
+    margin: 5px 5px 5px 5px;
+     background-color: white;
+    color: #b3b3ce;
+     float: center;
+     align-content: center;
+  }
+  #rcorners1 {
+    
+    border-radius: 25px;
+    background: #b3b3ce;
+    float: center;
+    align-content: center;
+    width: 90%;
+    height: 90%;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    align-content: center;
+  }
+
+  .card p{
+    color:black;
+
+  }
+  .card h3{
+    color:black;
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+    font-size: 55px;
+  }

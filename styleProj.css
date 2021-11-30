@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+.navbar-btn{
+	padding-right: 10px;
+}
+
+.jumbotron{
+	background-color: #e1f2fe; 
+}
+
+.jumbotron2{
+	background-color: #b3b3ce; 
+}
+
+.homeImage{
+	 text-align: right;  
+}
+
+.body
+{
+background-color:rgb(149, 149, 178);
+}
