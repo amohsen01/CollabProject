@@ -17,7 +17,30 @@
 	 text-align: right;  
 }
 
-.body
+body
 {
 background-color:rgb(149, 149, 178);
+font-family: Arial, Helvetica, sans-serif;
+}
+.btn-group button {
+	/* background-color: #04AA6D; /* Green background */
+	 border: 1px solid rgb(66, 0, 128); /* Green border */
+	 color: rgb(66, 0, 128); /* White text */
+	 padding: 10px 24px; /* Some padding */
+	 cursor: pointer; /* Pointer/hand icon */
+	 float: left; /* Float the buttons side by side */
+   }
+
+.checked {
+    color: orange;
+  }
+  .btn-primary {
+    color: rgb(66, 0, 128);
+    background-color: #fff;
+    border-color: rgb(66, 0, 128); /*set the color you want here*/
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: rgb(66, 0, 128);
+    border-color:rgb(66, 0, 128); /*set the color you want here*/
 }

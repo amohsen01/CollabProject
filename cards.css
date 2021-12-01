@@ -2,10 +2,6 @@
     box-sizing: border-box;
   }
   
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
   /* Float 3 columns side by side */
   .column {
     float: center;
@@ -31,7 +27,12 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
     padding: 16px;
     text-align: center;
-    background-color: #f1f1f1;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+    border-radius: 25px;
+  }
+  .card img {
+    border-radius: 25px;
   }
   
   /* Responsive columns - one column layout (vertical) on small screens */
@@ -63,11 +64,3 @@
     display: table;
   }
   
-  /* Add a background color on hover */
-  .btn-group button:hover {
-    background-color:white;
-    color: rgb(66, 0, 128); /* White text */
-  }
-  .checked {
-    color: orange;
-  }

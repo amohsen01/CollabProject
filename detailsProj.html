@@ -8,13 +8,13 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="detailsProj.css">
  <link rel="stylesheet" href="styleProj.css">
+ <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 
 </head>
-
 <body>
   <div id="sidebar"></div>
   <script>
@@ -23,14 +23,26 @@
       })
   </script>
   <div id="main">
-  <button class="openbtn" onclick="toggle()">&#9776; </button>
-
-      <div class="w3-panel w3-border w3-round-xlarge border-0" style="max-width: 70%; margin:auto;" >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:;" onclick="toggle()"> &#9776; </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <br>
+      <div class="w3-panel w3-round-xlarge border-0" style="max-width: 70%; margin:auto;" >
         <div class="card" style="border-radius: 25px; margin: 20px 0 20px 0">
         <div >
         <img class="img" style="border-radius: 25px 25px 0 0;" width="100%" height="500"src="http://collablab.dyndns.org/uploads/project18.jpg">
     </div>
-        <div class="card-body " >
+        <div class="card-body" >
             <div style="display: inline-block;">
             <div>
           <h3 class="card-title" style="display:inline-block">Project Name &emsp; &emsp; </h3>
@@ -38,16 +50,18 @@
         </div>
         </div>
           <br>
-        <button type="button" class="btn btn-outline-success">C++</button>
-        <button type="button" class="btn btn-outline-success">Arduino</button>
-        <button type="button" class="btn btn-outline-success">Robotics</button>
-          <button class="btn btn-outline-success my-2 my-sm-0" style="display: inline-block;" type="submit">
+          <div class="btn-group">
+        <button type="button" class="btn btn-primary">C++</button>
+        <button type="button" class="btn btn-primary">Arduino</button>
+        <button type="button" class="btn btn-primary">Robotics</button>
+          <button class="btn btn-primary my-2 my-sm-0" style="display: inline-block;" type="submit">
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star checked"></span>
             <span class="fa fa-star"></span>
             <span class="fa fa-star"></span>
         </button>
+       </div>
          <br><br>
         <div style="min-width: 20%; background-color: rgb(235, 236, 233); border-radius: 10px; display: inline-block;" >
           <p class="card-text" style="text-align:center;"> <br>Team Members: </p>
@@ -59,7 +73,7 @@
         <div style="min-width: 5%; display: inline-block;"> </div>
         <div style="max-width: 70%; display: inline-block; max-height:50%;"> 
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dignissim suscipit finibus. Integer ultricies quis enim eu imperdiet. Donec eu urna dignissim velit luctus placerat ut sit amet dolor. Donec sollicitudin nisl a interdum hendrerit. Ut ante lorem, pulvinar eu metus eu, iaculis laoreet odio. In vestibulum ac risus ac aliquet. Suspendisse potenti. Phasellus sollicitudin tortor quis nisl tempus pulvinar. Sed suscipit felis enim, vel bibendum dui tempor sit amet. Aenean elit enim, varius non sollicitudin ac, dictum sit amet erat. Donec non laoreet diam. Curabitur eget enim tincidunt, egestas lorem nec, efficitur est. Nunc imperdiet sed lorem sit amet accumsan. Mauris hendrerit felis ut bibendum pretium. Pellentesque et accumsan ipsum, ut sagittis tellus.Donec euismod mattis dictum. Phasellus diam nisl, pulvinar quis varius nec, rhoncus luctus lacus. Vivamus congue nibh nec turpis posuere, vitae luctus quam tristique. Integer eleifend purus sit amet ante ultrices imperdiet.  </p>
-        <button class="btn btn-outline-success" href="#" style="margin:auto; "> Connect using Slack</button>
+        <div class="btn-group"><button class="btn btn-primary" href="#" style="margin:auto;"> Connect using Slack</button></div>
     </div>
 
         </div>

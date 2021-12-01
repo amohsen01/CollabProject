@@ -28,14 +28,15 @@ hr {
 
 /* Set a style for the submit/register button */
 .registerbtn {
-  background-color: rgb(66, 0, 128);
-  color: white;
   padding: 16px 20px;
   margin: 8px 0;
   border: none;
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
+  color: rgb(66, 0, 128);
+    background-color: #fff;
+    border-color: rgb(66, 0, 128); /*set the color you want here*/
 }
 
 .registerbtn:hover {

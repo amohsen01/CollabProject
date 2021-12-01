@@ -8,54 +8,28 @@
 <link rel="stylesheet" href="cards.css">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Collaborative Lab</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Messages</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Projects
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Add Projects</a>
-            <a class="dropdown-item" href="#">Current Projects</a>
-            
-          </div>
-        </li>
-       
-      </ul>
-       <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0 mr-1" type="submit">Search</button>
-        <br>
-        <a class="btn" href="#">
-          <i class="far fa-user-circle fa-2x"></i>
-        </a>
-      </form>
-    </div>
-  </nav>
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div id="sidebar"></div>
+  <script>
+      $(function() {
+          $("#sidebar").load("navbar-left.html");
+      })
+  </script>
+  <div id="main">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:;" onclick="toggle()"> &#9776; </a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link disabled" href="#">Filters</a>
               </li>
@@ -99,7 +73,7 @@
         </div>
    </nav>
 
-   <br><br>
+<br>
       <div class="row">
         <div class="column">
           <div class="card">
@@ -107,8 +81,8 @@
            <h3>Project</h3>
            <p>some info</p>
            <div class="btn-group">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">View</button>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">View</button>
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star"></span>
                 <span class="fa fa-star "></span>
@@ -122,8 +96,8 @@
             <h3>Project</h3>
             <p>some info</p>
             <div class="btn-group">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">View</button>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">View</button>
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -139,8 +113,8 @@
             <h3>Project</h3>
             <p>some info</p>
             <div class="btn-group">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">View</button>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">View</button>
+            <button class="btn btn-primary my-2 my-sm-0" type="submit">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -154,8 +128,8 @@
             <h3>Project</h3>
             <p>some info</p>
             <div class="btn-group">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">View</button>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">View</button>
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star "></span>
@@ -171,8 +145,8 @@
             <h3>Project</h3>
             <p>some info</p>
             <div class="btn-group">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">View</button>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">View</button>
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -186,8 +160,8 @@
             <h3>Project</h3>
             <p>some info</p>
             <div class="btn-group">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">View</button>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">View</button>
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star "></span>
@@ -197,9 +171,7 @@
              </div>
         </div>
     </div>
+    </div>  
     </div>
-    
-        
-    
 </body>
 
